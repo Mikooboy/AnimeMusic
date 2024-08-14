@@ -216,6 +216,27 @@ body {
     border-radius: 4px;
 }
 
+.search {
+    font-family: consolas;
+    font-size: 12px;
+    color: #eee;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px inset, rgba(0, 0, 0, 0.2) -1px -1px 2px inset;
+    background-color: #202021;
+    border-radius: 4px;
+    padding: 0.5vh;
+    padding-left: 1vh;
+    margin: 2vh 2vh 0vh 2vh;
+    border-width: 0;
+}
+
+.search::placeholder {
+    font-family: consolas;
+    font-size: 12px;
+    color: #eee;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
+}
+
 .title {
     font-size: 2.5vh;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
