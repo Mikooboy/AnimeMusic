@@ -60,7 +60,7 @@ body {
 }
 
 .button {
-    box-shadow: rgba(0, 0, 0, 0.4) 3px 2px 4px, rgba(0, 0, 0, 0.3) 3px 7px 13px -3px, rgba(0, 0, 0, 0.2) -3px -3px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px, rgba(0, 0, 0, 0.4) 0px 0px 8px;
     border-radius: 4px;
     padding: 16px;
     border: 0px;
@@ -236,7 +236,7 @@ body {
 }
 
 .link-op, .link-ed {
-    box-shadow: rgba(0, 0, 0, 0.4) 3px 2px 4px, rgba(0, 0, 0, 0.2) -2px -2px 0px inset;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 0px 4px, rgba(0, 0, 0, 0.4) 0px 0px 8px;
     border-radius: 4px;
     padding: 8px;
     border: 0px;
