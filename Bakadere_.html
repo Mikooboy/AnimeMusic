@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bakadere_'s Themes</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="scripts.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+    <div class="video-container">
+      <video class="player" controls="controls" id="video" src=""></video>
+    </div>
+    <div class="list-container">
+      <div class="border-container">
+        <ul class="list">
+          <li class="entry" onclick="show_details('Kanojo, Okarishimasu')">
+            <button class="entry-name">Kanojo, Okarishimasu</button>
+          </li>
+          <li class="entry" onclick="show_details('Kanojo, Okarishimasu 2nd Season')">
+            <button class="entry-name">Kanojo, Okarishimasu 2nd Season</button>
+          </li>
+          <li class="entry" onclick="show_details('Kanojo, Okarishimasu 3rd Season')">
+            <button class="entry-name">Kanojo, Okarishimasu 3rd Season</button>
+          </li>
+          <li class="entry" onclick="show_details('Kimi no Na wa.')">
+            <button class="entry-name">Kimi no Na wa.</button>
+          </li>
+          <li class="entry" onclick="show_details('Kono Subarashii Sekai ni Shukufuku wo!')">
+            <button class="entry-name">Kono Subarashii Sekai ni Shukufuku wo!</button>
+          </li>
+          <li class="entry" onclick="show_details('Mononoke Hime')">
+            <button class="entry-name">Mononoke Hime</button>
+          </li>
+          <li class="entry" onclick="show_details('Mushoku Tensei II: Isekai Ittara Honki Dasu')">
+            <button class="entry-name">Mushoku Tensei II: Isekai Ittara Honki Dasu</button>
+          </li>
+          <li class="entry" onclick="show_details('Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz')">
+            <button class="entry-name">Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz</button>
+          </li>
+          <li class="entry" onclick="show_details('Mushoku Tensei: Isekai Ittara Honki Dasu')">
+            <button class="entry-name">Mushoku Tensei: Isekai Ittara Honki Dasu</button>
+          </li>
+          <li class="entry" onclick="show_details('Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu')">
+            <button class="entry-name">Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu</button>
+          </li>
+          <li class="entry" onclick="show_details('Mushoku Tensei: Isekai Ittara Honki Dasu Part 2')">
+            <button class="entry-name">Mushoku Tensei: Isekai Ittara Honki Dasu Part 2</button>
+          </li>
+          <li class="entry" onclick="show_details('Naruto')">
+            <button class="entry-name">Naruto</button>
+          </li>
+          <li class="entry" onclick="show_details('One Punch Man')">
+            <button class="entry-name">One Punch Man</button>
+          </li>
+          <li class="entry" onclick="show_details('Ookami Kodomo no Ame to Yuki')">
+            <button class="entry-name">Ookami Kodomo no Ame to Yuki</button>
+          </li>
+          <li class="entry" onclick="show_details('Perfect Blue')">
+            <button class="entry-name">Perfect Blue</button>
+          </li>
+          <li class="entry" onclick="show_details('Poputepipikku')">
+            <button class="entry-name">Poputepipikku</button>
+          </li>
+          <li class="entry" onclick="show_details('Sen to Chihiro no Kamikakushi')">
+            <button class="entry-name">Sen to Chihiro no Kamikakushi</button>
+          </li>
+          <li class="entry" onclick="show_details('Neon Genesis Evangelion')">
+            <button class="entry-name">Neon Genesis Evangelion</button>
+          </li>
+          <li class="entry" onclick="show_details('Neon Genesis Evangelion: The End of Evangelion')">
+            <button class="entry-name">Neon Genesis Evangelion: The End of Evangelion</button>
+          </li>
+          <li class="entry" onclick="show_details('Suzume no Tojimari')">
+            <button class="entry-name">Suzume no Tojimari</button>
+          </li>
+          <li class="entry" onclick="show_details('Tejina-senpai')">
+            <button class="entry-name">Tejina-senpai</button>
+          </li>
+          <li class="entry" onclick="show_details('Tenkuu no Shiro Laputa')">
+            <button class="entry-name">Tenkuu no Shiro Laputa</button>
+          </li>
+          <li class="entry" onclick="show_details('Uzaki-chan wa Asobitai!')">
+            <button class="entry-name">Uzaki-chan wa Asobitai!</button>
+          </li>
+        </ul>
+        <div class="overlay"></div>
+      </div>
+      <div class="extra-buttons">
+        <div id="now-playing">Now playing: None</div>
+        <button class="buttons" id="random" onclick="play_random('all')">Random</button>
+        <button class="buttons" id="auto" onclick="toggle_auto()">Auto Next</button>
+      </div>
+    </div>
+    <ul class="details-list">
+      <li class="details" id="Bakemono no Ko">
+        <img class="details-pic" href="https://myanimelist.net/anime/28805" src="https://cdn.myanimelist.net/images/anime/11/73540.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/28805" target="_blank">Bakemono no Ko</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Coquelicot-zaka kara">
+        <img class="details-pic" href="https://myanimelist.net/anime/10029" src="https://cdn.myanimelist.net/images/anime/8/32547.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/10029" target="_blank">Coquelicot-zaka kara</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Gake no Ue no Ponyo">
+        <img class="details-pic" href="https://myanimelist.net/anime/2890" src="https://cdn.myanimelist.net/images/anime/7/8970.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/2890" target="_blank">Gake no Ue no Ponyo</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Ged Senki">
+        <img class="details-pic" href="https://myanimelist.net/anime/1829" src="https://cdn.myanimelist.net/images/anime/5/73443.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/1829" target="_blank">Ged Senki</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Kanojo, Okarishimasu">
+        <img class="details-pic" href="https://myanimelist.net/anime/40839" src="https://cdn.myanimelist.net/images/anime/1902/128382.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/40839" target="_blank">Kanojo, Okarishimasu</a>
+          <div class="ops">
+            <button class="link-op" file_name="Kanokari-OP1" onclick="change_src('https://v.animethemes.moe/Kanokari-OP1.webm', true, 'Kanokari-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="Kanokari-ED1" onclick="change_src('https://v.animethemes.moe/Kanokari-ED1.webm', true, 'Kanokari-ED1')">ED1</button>
+            <button class="link-ed" file_name="Kanokari-ED2" onclick="change_src('https://v.animethemes.moe/Kanokari-ED2.webm', true, 'Kanokari-ED2')">ED2</button>
+            <button class="link-ed" file_name="Kanokari-ED3" onclick="change_src('https://v.animethemes.moe/Kanokari-ED3.webm', true, 'Kanokari-ED3')">ED3</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Kanojo, Okarishimasu 2nd Season">
+        <img class="details-pic" href="https://myanimelist.net/anime/42963" src="https://cdn.myanimelist.net/images/anime/1070/124592.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/42963" target="_blank">Kanojo, Okarishimasu 2nd Season</a>
+          <div class="ops">
+            <button class="link-op" file_name="KanokariS2-OP1" onclick="change_src('https://v.animethemes.moe/KanokariS2-OP1.webm', true, 'KanokariS2-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="KanokariS2-ED1" onclick="change_src('https://v.animethemes.moe/KanokariS2-ED1.webm', true, 'KanokariS2-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Kanojo, Okarishimasu 3rd Season">
+        <img class="details-pic" href="https://myanimelist.net/anime/53050" src="https://cdn.myanimelist.net/images/anime/1696/136634.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/53050" target="_blank">Kanojo, Okarishimasu 3rd Season</a>
+          <div class="ops">
+            <button class="link-op" file_name="KanokariS3-OP1" onclick="change_src('https://v.animethemes.moe/KanokariS3-OP1.webm', true, 'KanokariS3-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="KanokariS3-ED1" onclick="change_src('https://v.animethemes.moe/KanokariS3-ED1.webm', true, 'KanokariS3-ED1')">ED1</button>
+            <button class="link-ed" file_name="KanokariS3-ED2" onclick="change_src('https://v.animethemes.moe/KanokariS3-ED2.webm', true, 'KanokariS3-ED2')">ED2</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Karigurashi no Arrietty">
+        <img class="details-pic" href="https://myanimelist.net/anime/7711" src="https://cdn.myanimelist.net/images/anime/1974/116417.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/7711" target="_blank">Karigurashi no Arrietty</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Kimi no Na wa.">
+        <img class="details-pic" href="https://myanimelist.net/anime/32281" src="https://cdn.myanimelist.net/images/anime/5/87048.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/32281" target="_blank">Kimi no Na wa.</a>
+          <div class="ops">
+            <button class="link-op" file_name="KimiNoNaWa-OP1" onclick="change_src('https://v.animethemes.moe/KimiNoNaWa-OP1.webm', true, 'KimiNoNaWa-OP1')">OP</button>
+            <button class="link-op" file_name="KimiNoNaWaDub-OP1" onclick="change_src('https://v.animethemes.moe/KimiNoNaWaDub-OP1.webm', true, 'KimiNoNaWaDub-OP1')">OP-Dub</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="KimiNoNaWa-ED1" onclick="change_src('https://v.animethemes.moe/KimiNoNaWa-ED1.webm', true, 'KimiNoNaWa-ED1')">ED</button>
+            <button class="link-ed" file_name="KimiNoNaWaDub-ED1" onclick="change_src('https://v.animethemes.moe/KimiNoNaWaDub-ED1.webm', true, 'KimiNoNaWaDub-ED1')">ED-Dub</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Kimitachi wa Dou Ikiru ka">
+        <img class="details-pic" href="https://myanimelist.net/anime/36699" src="https://cdn.myanimelist.net/images/anime/1126/139654.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/36699" target="_blank">Kimitachi wa Dou Ikiru ka</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Kono Subarashii Sekai ni Shukufuku wo!">
+        <img class="details-pic" href="https://myanimelist.net/anime/30831" src="https://cdn.myanimelist.net/images/anime/8/77831.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/30831" target="_blank">Kono Subarashii Sekai ni Shukufuku wo!</a>
+          <div class="ops">
+            <button class="link-op" file_name="Konosuba-OP1" onclick="change_src('https://v.animethemes.moe/Konosuba-OP1.webm', true, 'Konosuba-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="Konosuba-ED1" onclick="change_src('https://v.animethemes.moe/Konosuba-ED1.webm', true, 'Konosuba-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Kurenai no Buta">
+        <img class="details-pic" href="https://myanimelist.net/anime/416" src="https://cdn.myanimelist.net/images/anime/6/2878.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/416" target="_blank">Kurenai no Buta</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Lupin III: Cagliostro no Shiro">
+        <img class="details-pic" href="https://myanimelist.net/anime/1430" src="https://cdn.myanimelist.net/images/anime/5/26182.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/1430" target="_blank">Lupin III: Cagliostro no Shiro</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Majo no Takkyuubin">
+        <img class="details-pic" href="https://myanimelist.net/anime/512" src="https://cdn.myanimelist.net/images/anime/10/75916.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/512" target="_blank">Majo no Takkyuubin</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Mononoke Hime">
+        <img class="details-pic" href="https://myanimelist.net/anime/164" src="https://cdn.myanimelist.net/images/anime/7/75919.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/164" target="_blank">Mononoke Hime</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="MononokeHime-ED1" onclick="change_src('https://v.animethemes.moe/MononokeHime-ED1.webm', true, 'MononokeHime-ED1')">ED</button>
+            <button class="link-ed" file_name="MononokeHimeDub-ED1" onclick="change_src('https://v.animethemes.moe/MononokeHimeDub-ED1.webm', true, 'MononokeHimeDub-ED1')">ED-Dub</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei II: Isekai Ittara Honki Dasu">
+        <img class="details-pic" href="https://myanimelist.net/anime/51179" src="https://cdn.myanimelist.net/images/anime/1898/138005.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/51179" target="_blank">Mushoku Tensei II: Isekai Ittara Honki Dasu</a>
+          <div class="ops">
+            <button class="link-op" file_name="MushokuTenseiS2-OP1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiS2-OP1.webm', true, 'MushokuTenseiS2-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="MushokuTenseiS2-ED1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiS2-ED1.webm', true, 'MushokuTenseiS2-ED1')">ED1</button>
+            <button class="link-ed" file_name="MushokuTenseiS2-ED2" onclick="change_src('https://v.animethemes.moe/MushokuTenseiS2-ED2.webm', true, 'MushokuTenseiS2-ED2')">ED2</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz">
+        <img class="details-pic" href="https://myanimelist.net/anime/55818" src="https://cdn.myanimelist.net/images/anime/1627/136934.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/55818" target="_blank">Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="MushokuTenseiS2E0-ED1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiS2E0-ED1.webm', true, 'MushokuTenseiS2E0-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2">
+        <img class="details-pic" href="https://myanimelist.net/anime/55888" src="https://cdn.myanimelist.net/images/anime/1876/141251.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/55888" target="_blank">Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei: Isekai Ittara Honki Dasu">
+        <img class="details-pic" href="https://myanimelist.net/anime/39535" src="https://cdn.myanimelist.net/images/anime/1530/117776.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/39535" target="_blank">Mushoku Tensei: Isekai Ittara Honki Dasu</a>
+          <div class="ops">
+            <button class="link-op" file_name="MushokuTensei-OP1" onclick="change_src('https://v.animethemes.moe/MushokuTensei-OP1.webm', true, 'MushokuTensei-OP1')">OP1</button>
+            <button class="link-op" file_name="MushokuTensei-OP2" onclick="change_src('https://v.animethemes.moe/MushokuTensei-OP2-NCBD1080.webm', true, 'MushokuTensei-OP2')">OP2</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="MushokuTensei-ED1" onclick="change_src('https://v.animethemes.moe/MushokuTensei-ED1.webm', true, 'MushokuTensei-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu">
+        <img class="details-pic" href="https://myanimelist.net/anime/50360" src="https://cdn.myanimelist.net/images/anime/1094/120148.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/50360" target="_blank">Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu</a>
+          <div class="ops">
+            <button class="link-op" file_name="MushokuTenseiPart2-OP3" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm', true, 'MushokuTenseiPart2-OP3')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="MushokuTenseiPart2-ED1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm', true, 'MushokuTenseiPart2-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Mushoku Tensei: Isekai Ittara Honki Dasu Part 2">
+        <img class="details-pic" href="https://myanimelist.net/anime/45576" src="https://cdn.myanimelist.net/images/anime/1028/117777.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/45576" target="_blank">Mushoku Tensei: Isekai Ittara Honki Dasu Part 2</a>
+          <div class="ops">
+            <button class="link-op" file_name="MushokuTenseiPart2-OP1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP1.webm', true, 'MushokuTenseiPart2-OP1')">OP1</button>
+            <button class="link-op" file_name="MushokuTenseiPart2-OP2" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP2.webm', true, 'MushokuTenseiPart2-OP2')">OP2</button>
+            <button class="link-op" file_name="MushokuTenseiPart2-OP3" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm', true, 'MushokuTenseiPart2-OP3')">OP3</button>
+            <button class="link-op" file_name="MushokuTenseiPart2-OP4" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP4.webm', true, 'MushokuTenseiPart2-OP4')">OP4</button>
+            <button class="link-op" file_name="MushokuTenseiPart2-OP5" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-OP5.webm', true, 'MushokuTenseiPart2-OP5')">OP5</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="MushokuTenseiPart2-ED1" onclick="change_src('https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm', true, 'MushokuTenseiPart2-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Naruto">
+        <img class="details-pic" href="https://myanimelist.net/anime/20" src="https://cdn.myanimelist.net/images/anime/13/17405.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/20" target="_blank">Naruto</a>
+          <div class="ops">
+            <button class="link-op" file_name="Naruto-OP1" onclick="change_src('https://v.animethemes.moe/Naruto-OP1.webm', true, 'Naruto-OP1')">OP1</button>
+            <button class="link-op" file_name="Naruto-OP2" onclick="change_src('https://v.animethemes.moe/Naruto-OP2.webm', true, 'Naruto-OP2')">OP2</button>
+            <button class="link-op" file_name="Naruto-OP3" onclick="change_src('https://v.animethemes.moe/Naruto-OP3.webm', true, 'Naruto-OP3')">OP3</button>
+            <button class="link-op" file_name="Naruto-OP4" onclick="change_src('https://v.animethemes.moe/Naruto-OP4.webm', true, 'Naruto-OP4')">OP4</button>
+            <button class="link-op" file_name="Naruto-OP5" onclick="change_src('https://v.animethemes.moe/Naruto-OP5.webm', true, 'Naruto-OP5')">OP5</button>
+            <button class="link-op" file_name="Naruto-OP6" onclick="change_src('https://v.animethemes.moe/Naruto-OP6.webm', true, 'Naruto-OP6')">OP6</button>
+            <button class="link-op" file_name="Naruto-OP7" onclick="change_src('https://v.animethemes.moe/Naruto-OP7.webm', true, 'Naruto-OP7')">OP7</button>
+            <button class="link-op" file_name="Naruto-OP8" onclick="change_src('https://v.animethemes.moe/Naruto-OP8.webm', true, 'Naruto-OP8')">OP8</button>
+            <button class="link-op" file_name="Naruto-OP9" onclick="change_src('https://v.animethemes.moe/Naruto-OP9.webm', true, 'Naruto-OP9')">OP9</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="Naruto-ED1" onclick="change_src('https://v.animethemes.moe/Naruto-ED1.webm', true, 'Naruto-ED1')">ED1</button>
+            <button class="link-ed" file_name="Naruto-ED2" onclick="change_src('https://v.animethemes.moe/Naruto-ED2.webm', true, 'Naruto-ED2')">ED2</button>
+            <button class="link-ed" file_name="Naruto-ED3" onclick="change_src('https://v.animethemes.moe/Naruto-ED3.webm', true, 'Naruto-ED3')">ED3</button>
+            <button class="link-ed" file_name="Naruto-ED4" onclick="change_src('https://v.animethemes.moe/Naruto-ED4.webm', true, 'Naruto-ED4')">ED4</button>
+            <button class="link-ed" file_name="Naruto-ED5" onclick="change_src('https://v.animethemes.moe/Naruto-ED5.webm', true, 'Naruto-ED5')">ED5</button>
+            <button class="link-ed" file_name="Naruto-ED6" onclick="change_src('https://v.animethemes.moe/Naruto-ED6.webm', true, 'Naruto-ED6')">ED6</button>
+            <button class="link-ed" file_name="Naruto-ED7" onclick="change_src('https://v.animethemes.moe/Naruto-ED7.webm', true, 'Naruto-ED7')">ED7</button>
+            <button class="link-ed" file_name="Naruto-ED8" onclick="change_src('https://v.animethemes.moe/Naruto-ED8.webm', true, 'Naruto-ED8')">ED8</button>
+            <button class="link-ed" file_name="Naruto-ED9" onclick="change_src('https://v.animethemes.moe/Naruto-ED9.webm', true, 'Naruto-ED9')">ED9</button>
+            <button class="link-ed" file_name="Naruto-ED10" onclick="change_src('https://v.animethemes.moe/Naruto-ED10.webm', true, 'Naruto-ED10')">ED10</button>
+            <button class="link-ed" file_name="Naruto-ED11" onclick="change_src('https://v.animethemes.moe/Naruto-ED11.webm', true, 'Naruto-ED11')">ED11</button>
+            <button class="link-ed" file_name="Naruto-ED12" onclick="change_src('https://v.animethemes.moe/Naruto-ED12.webm', true, 'Naruto-ED12')">ED12</button>
+            <button class="link-ed" file_name="Naruto-ED13" onclick="change_src('https://v.animethemes.moe/Naruto-ED13.webm', true, 'Naruto-ED13')">ED13</button>
+            <button class="link-ed" file_name="Naruto-ED14" onclick="change_src('https://v.animethemes.moe/Naruto-ED14.webm', true, 'Naruto-ED14')">ED14</button>
+            <button class="link-ed" file_name="Naruto-ED15" onclick="change_src('https://v.animethemes.moe/Naruto-ED15.webm', true, 'Naruto-ED15')">ED15</button>
+            <button class="link-ed" file_name="NarutoShounenHen-ED7" onclick="change_src('https://v.animethemes.moe/NarutoShounenHen-ED7.webm', true, 'NarutoShounenHen-ED7')">ED7-Shounen</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Neko no Ongaeshi">
+        <img class="details-pic" href="https://myanimelist.net/anime/597" src="https://cdn.myanimelist.net/images/anime/1/597.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/597" target="_blank">Neko no Ongaeshi</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="One Punch Man">
+        <img class="details-pic" href="https://myanimelist.net/anime/30276" src="https://cdn.myanimelist.net/images/anime/12/76049.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/30276" target="_blank">One Punch Man</a>
+          <div class="ops">
+            <button class="link-op" file_name="OnePunchMan-OP1" onclick="change_src('https://v.animethemes.moe/OnePunchMan-OP1.webm', true, 'OnePunchMan-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="OnePunchMan-ED1" onclick="change_src('https://v.animethemes.moe/OnePunchMan-ED1.webm', true, 'OnePunchMan-ED1')">ED1</button>
+            <button class="link-ed" file_name="OnePunchMan-ED2" onclick="change_src('https://v.animethemes.moe/OnePunchMan-ED2.webm', true, 'OnePunchMan-ED2')">ED2</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Ookami Kodomo no Ame to Yuki">
+        <img class="details-pic" href="https://myanimelist.net/anime/12355" src="https://cdn.myanimelist.net/images/anime/9/35721.webp">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/12355" target="_blank">Ookami Kodomo no Ame to Yuki</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="OokamiKodomo-ED1" onclick="change_src('https://v.animethemes.moe/OokamiKodomo-ED1.webm', true, 'OokamiKodomo-ED1')">ED1</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Perfect Blue">
+        <img class="details-pic" href="https://myanimelist.net/anime/437" src="https://cdn.myanimelist.net/images/anime/1254/134212.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/437" target="_blank">Perfect Blue</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="PerfectBlue-ED1" onclick="change_src('https://v.animethemes.moe/PerfectBlue-ED1.webm', true, 'PerfectBlue-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Poputepipikku">
+        <img class="details-pic" href="https://myanimelist.net/anime/35330" src="https://cdn.myanimelist.net/images/anime/3/88816.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/35330" target="_blank">Poputepipikku</a>
+          <div class="ops">
+            <button class="link-op" file_name="PopTeamEpic-OP1" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-OP1-NCBD1080.webm', true, 'PopTeamEpic-OP1')">OP1</button>
+            <button class="link-op" file_name="PopTeamEpic-OP2" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-OP2-NCBD1080.webm', true, 'PopTeamEpic-OP2')">OP2</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="PopTeamEpic-ED1" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED1-NCBD1080.webm', true, 'PopTeamEpic-ED1')">ED1</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED2" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED2-NCBD1080.webm', true, 'PopTeamEpic-ED2')">ED2</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED3" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED3-NCBD1080.webm', true, 'PopTeamEpic-ED3')">ED3</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED4" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED4-NCBD1080.webm', true, 'PopTeamEpic-ED4')">ED4</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED5" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED5-NCBD1080.webm', true, 'PopTeamEpic-ED5')">ED5</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED6" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED6-NCBD1080.webm', true, 'PopTeamEpic-ED6')">ED6</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED7" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED7-NCBD1080.webm', true, 'PopTeamEpic-ED7')">ED7</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED8" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED8-NCBD1080.webm', true, 'PopTeamEpic-ED8')">ED8</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED9" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED9-NCBD1080.webm', true, 'PopTeamEpic-ED9')">ED9</button>
+            <button class="link-ed" file_name="PopTeamEpic-ED10" onclick="change_src('https://v.animethemes.moe/PopTeamEpic-ED10-NCBD1080.webm', true, 'PopTeamEpic-ED10')">ED10</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Saint☆Oniisan (Movie)">
+        <img class="details-pic" href="https://myanimelist.net/anime/15771" src="https://cdn.myanimelist.net/images/anime/7/48723.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/15771" target="_blank">Saint☆Oniisan (Movie)</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Sen to Chihiro no Kamikakushi">
+        <img class="details-pic" href="https://myanimelist.net/anime/199" src="https://cdn.myanimelist.net/images/anime/6/79597.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/199" target="_blank">Sen to Chihiro no Kamikakushi</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="SenToChihiroNoKamikakushi-ED1" onclick="change_src('https://v.animethemes.moe/SenToChihiroNoKamikakushi-ED1.webm', true, 'SenToChihiroNoKamikakushi-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Neon Genesis Evangelion">
+        <img class="details-pic" href="https://myanimelist.net/anime/30" src="https://cdn.myanimelist.net/images/anime/1314/108941.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/30" target="_blank">Neon Genesis Evangelion</a>
+          <div class="ops">
+            <button class="link-op" file_name="NeonGenesisEvangelion-OP1" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-OP1.webm', true, 'NeonGenesisEvangelion-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED1" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED1.webm', true, 'NeonGenesisEvangelion-ED1')">ED1</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED2" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED2.webm', true, 'NeonGenesisEvangelion-ED2')">ED2</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED3" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED3.webm', true, 'NeonGenesisEvangelion-ED3')">ED3</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED4" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED4.webm', true, 'NeonGenesisEvangelion-ED4')">ED4</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED5" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED5.webm', true, 'NeonGenesisEvangelion-ED5')">ED5</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED6" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED6.webm', true, 'NeonGenesisEvangelion-ED6')">ED6</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED7" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED7.webm', true, 'NeonGenesisEvangelion-ED7')">ED7</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED8" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED8.webm', true, 'NeonGenesisEvangelion-ED8')">ED8</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED9" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED9.webm', true, 'NeonGenesisEvangelion-ED9')">ED9</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED10" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED10.webm', true, 'NeonGenesisEvangelion-ED10')">ED10</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED11" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED11.webm', true, 'NeonGenesisEvangelion-ED11')">ED11</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED12" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED12.webm', true, 'NeonGenesisEvangelion-ED12')">ED12</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED13" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED13.webm', true, 'NeonGenesisEvangelion-ED13')">ED13</button>
+            <button class="link-ed" file_name="NeonGenesisEvangelion-ED14" onclick="change_src('https://v.animethemes.moe/NeonGenesisEvangelion-ED14.webm', true, 'NeonGenesisEvangelion-ED14')">ED14</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Neon Genesis Evangelion: The End of Evangelion">
+        <img class="details-pic" href="https://myanimelist.net/anime/32" src="https://cdn.myanimelist.net/images/anime/1404/98182.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/32" target="_blank">Neon Genesis Evangelion: The End of Evangelion</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="EvangelionEndOfEvangelion-ED1" onclick="change_src('https://v.animethemes.moe/EvangelionEndOfEvangelion-ED1.webm', true, 'EvangelionEndOfEvangelion-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Suzume no Tojimari">
+        <img class="details-pic" href="https://myanimelist.net/anime/50594" src="https://cdn.myanimelist.net/images/anime/1598/128450.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/50594" target="_blank">Suzume no Tojimari</a>
+          <div class="ops"></div>
+          <div class="eds">
+            <button class="link-ed" file_name="SuzumeNoTojimari-ED1" onclick="change_src('https://v.animethemes.moe/SuzumeNoTojimari-ED1.webm', true, 'SuzumeNoTojimari-ED1')">ED1</button>
+            <button class="link-ed" file_name="SuzumeNoTojimari-ED2" onclick="change_src('https://v.animethemes.moe/SuzumeNoTojimari-ED2.webm', true, 'SuzumeNoTojimari-ED2')">ED2</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Tanoshii Muumin Ikka">
+        <img class="details-pic" href="https://myanimelist.net/anime/2150" src="https://cdn.myanimelist.net/images/anime/13/26765.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/2150" target="_blank">Tanoshii Muumin Ikka</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Tejina-senpai">
+        <img class="details-pic" href="https://myanimelist.net/anime/38610" src="https://cdn.myanimelist.net/images/anime/1510/99891.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/38610" target="_blank">Tejina-senpai</a>
+          <div class="ops">
+            <button class="link-op" file_name="TejinaSenpai-OP1" onclick="change_src('https://v.animethemes.moe/TejinaSenpai-OP1.webm', true, 'TejinaSenpai-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="TejinaSenpai-ED1" onclick="change_src('https://v.animethemes.moe/TejinaSenpai-ED1.webm', true, 'TejinaSenpai-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+      <li class="details" id="Tenkuu no Shiro Laputa">
+        <img class="details-pic" href="https://myanimelist.net/anime/513" src="https://cdn.myanimelist.net/images/anime/5/37799.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/513" target="_blank">Tenkuu no Shiro Laputa</a>
+          <div class="ops">
+            <button class="link-op" file_name="TenkuuNoShiroLaputa-OP1" onclick="change_src('https://v.animethemes.moe/TenkuuNoShiroLaputa-OP1.webm', true, 'TenkuuNoShiroLaputa-OP1')">OP</button>
+          </div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Tonari no Totoro">
+        <img class="details-pic" href="https://myanimelist.net/anime/523" src="https://cdn.myanimelist.net/images/anime/4/75923.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/523" target="_blank">Tonari no Totoro</a>
+          <div class="ops"></div>
+          <div class="eds"></div>
+        </div>
+      </li>
+      <li class="details" id="Uzaki-chan wa Asobitai!">
+        <img class="details-pic" href="https://myanimelist.net/anime/41226" src="https://cdn.myanimelist.net/images/anime/1540/108292.jpg">
+        <div class="data">
+          <a class="title" href="https://myanimelist.net/anime/41226" target="_blank">Uzaki-chan wa Asobitai!</a>
+          <div class="ops">
+            <button class="link-op" file_name="UzakiChanWaAsobitai-OP1" onclick="change_src('https://v.animethemes.moe/UzakiChanWaAsobitai-OP1-NCBD1080.webm', true, 'UzakiChanWaAsobitai-OP1')">OP</button>
+          </div>
+          <div class="eds">
+            <button class="link-ed" file_name="UzakiChanWaAsobitai-ED1" onclick="change_src('https://v.animethemes.moe/UzakiChanWaAsobitai-ED1-NCBD1080.webm', true, 'UzakiChanWaAsobitai-ED1')">ED</button>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <ul class="full-list">
+      <li>Bakemono no Ko</li>
+      <li>Coquelicot-zaka kara</li>
+      <li>Gake no Ue no Ponyo</li>
+      <li>Ged Senki</li>
+      <li>Kanojo, Okarishimasu
+        <a class="full-link full-link-op" file_name="Kanokari-OP1" href="https://v.animethemes.moe/Kanokari-OP1.webm" target="_blank">https://v.animethemes.moe/Kanokari-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="Kanokari-ED1" href="https://v.animethemes.moe/Kanokari-ED1.webm" target="_blank">https://v.animethemes.moe/Kanokari-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="Kanokari-ED2" href="https://v.animethemes.moe/Kanokari-ED2.webm" target="_blank">https://v.animethemes.moe/Kanokari-ED2.webm</a>
+        <a class="full-link full-link-ed" file_name="Kanokari-ED3" href="https://v.animethemes.moe/Kanokari-ED3.webm" target="_blank">https://v.animethemes.moe/Kanokari-ED3.webm</a>
+      </li>
+      <li>Kanojo, Okarishimasu 2nd Season
+        <a class="full-link full-link-op" file_name="KanokariS2-OP1" href="https://v.animethemes.moe/KanokariS2-OP1.webm" target="_blank">https://v.animethemes.moe/KanokariS2-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="KanokariS2-ED1" href="https://v.animethemes.moe/KanokariS2-ED1.webm" target="_blank">https://v.animethemes.moe/KanokariS2-ED1.webm</a>
+      </li>
+      <li>Kanojo, Okarishimasu 3rd Season
+        <a class="full-link full-link-op" file_name="KanokariS3-OP1" href="https://v.animethemes.moe/KanokariS3-OP1.webm" target="_blank">https://v.animethemes.moe/KanokariS3-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="KanokariS3-ED1" href="https://v.animethemes.moe/KanokariS3-ED1.webm" target="_blank">https://v.animethemes.moe/KanokariS3-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="KanokariS3-ED2" href="https://v.animethemes.moe/KanokariS3-ED2.webm" target="_blank">https://v.animethemes.moe/KanokariS3-ED2.webm</a>
+      </li>
+      <li>Karigurashi no Arrietty</li>
+      <li>Kimi no Na wa.
+        <a class="full-link full-link-op" file_name="KimiNoNaWa-OP1" href="https://v.animethemes.moe/KimiNoNaWa-OP1.webm" target="_blank">https://v.animethemes.moe/KimiNoNaWa-OP1.webm</a>
+        <a class="full-link full-link-op" file_name="KimiNoNaWaDub-OP1" href="https://v.animethemes.moe/KimiNoNaWaDub-OP1.webm" target="_blank">https://v.animethemes.moe/KimiNoNaWaDub-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="KimiNoNaWa-ED1" href="https://v.animethemes.moe/KimiNoNaWa-ED1.webm" target="_blank">https://v.animethemes.moe/KimiNoNaWa-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="KimiNoNaWaDub-ED1" href="https://v.animethemes.moe/KimiNoNaWaDub-ED1.webm" target="_blank">https://v.animethemes.moe/KimiNoNaWaDub-ED1.webm</a>
+      </li>
+      <li>Kimitachi wa Dou Ikiru ka</li>
+      <li>Kono Subarashii Sekai ni Shukufuku wo!
+        <a class="full-link full-link-op" file_name="Konosuba-OP1" href="https://v.animethemes.moe/Konosuba-OP1.webm" target="_blank">https://v.animethemes.moe/Konosuba-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="Konosuba-ED1" href="https://v.animethemes.moe/Konosuba-ED1.webm" target="_blank">https://v.animethemes.moe/Konosuba-ED1.webm</a>
+      </li>
+      <li>Kurenai no Buta</li>
+      <li>Lupin III: Cagliostro no Shiro</li>
+      <li>Majo no Takkyuubin</li>
+      <li>Mononoke Hime
+        <a class="full-link full-link-ed" file_name="MononokeHime-ED1" href="https://v.animethemes.moe/MononokeHime-ED1.webm" target="_blank">https://v.animethemes.moe/MononokeHime-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="MononokeHimeDub-ED1" href="https://v.animethemes.moe/MononokeHimeDub-ED1.webm" target="_blank">https://v.animethemes.moe/MononokeHimeDub-ED1.webm</a>
+      </li>
+      <li>Mushoku Tensei II: Isekai Ittara Honki Dasu
+        <a class="full-link full-link-op" file_name="MushokuTenseiS2-OP1" href="https://v.animethemes.moe/MushokuTenseiS2-OP1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiS2-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="MushokuTenseiS2-ED1" href="https://v.animethemes.moe/MushokuTenseiS2-ED1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiS2-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="MushokuTenseiS2-ED2" href="https://v.animethemes.moe/MushokuTenseiS2-ED2.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiS2-ED2.webm</a>
+      </li>
+      <li>Mushoku Tensei II: Isekai Ittara Honki Dasu - Shugo Jutsushi Fitz
+        <a class="full-link full-link-ed" file_name="MushokuTenseiS2E0-ED1" href="https://v.animethemes.moe/MushokuTenseiS2E0-ED1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiS2E0-ED1.webm</a>
+      </li>
+      <li>Mushoku Tensei II: Isekai Ittara Honki Dasu Part 2</li>
+      <li>Mushoku Tensei: Isekai Ittara Honki Dasu
+        <a class="full-link full-link-op" file_name="MushokuTensei-OP1" href="https://v.animethemes.moe/MushokuTensei-OP1.webm" target="_blank">https://v.animethemes.moe/MushokuTensei-OP1.webm</a>
+        <a class="full-link full-link-op" file_name="MushokuTensei-OP2" href="https://v.animethemes.moe/MushokuTensei-OP2-NCBD1080.webm" target="_blank">https://v.animethemes.moe/MushokuTensei-OP2-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="MushokuTensei-ED1" href="https://v.animethemes.moe/MushokuTensei-ED1.webm" target="_blank">https://v.animethemes.moe/MushokuTensei-ED1.webm</a>
+      </li>
+      <li>Mushoku Tensei: Isekai Ittara Honki Dasu - Eris no Goblin Toubatsu
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP3" href="https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm</a>
+        <a class="full-link full-link-ed" file_name="MushokuTenseiPart2-ED1" href="https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm</a>
+      </li>
+      <li>Mushoku Tensei: Isekai Ittara Honki Dasu Part 2
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP1" href="https://v.animethemes.moe/MushokuTenseiPart2-OP1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP1.webm</a>
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP2" href="https://v.animethemes.moe/MushokuTenseiPart2-OP2.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP2.webm</a>
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP3" href="https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP3.webm</a>
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP4" href="https://v.animethemes.moe/MushokuTenseiPart2-OP4.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP4.webm</a>
+        <a class="full-link full-link-op" file_name="MushokuTenseiPart2-OP5" href="https://v.animethemes.moe/MushokuTenseiPart2-OP5.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-OP5.webm</a>
+        <a class="full-link full-link-ed" file_name="MushokuTenseiPart2-ED1" href="https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm" target="_blank">https://v.animethemes.moe/MushokuTenseiPart2-ED1.webm</a>
+      </li>
+      <li>Naruto
+        <a class="full-link full-link-op" file_name="Naruto-OP1" href="https://v.animethemes.moe/Naruto-OP1.webm" target="_blank">https://v.animethemes.moe/Naruto-OP1.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP2" href="https://v.animethemes.moe/Naruto-OP2.webm" target="_blank">https://v.animethemes.moe/Naruto-OP2.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP3" href="https://v.animethemes.moe/Naruto-OP3.webm" target="_blank">https://v.animethemes.moe/Naruto-OP3.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP4" href="https://v.animethemes.moe/Naruto-OP4.webm" target="_blank">https://v.animethemes.moe/Naruto-OP4.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP5" href="https://v.animethemes.moe/Naruto-OP5.webm" target="_blank">https://v.animethemes.moe/Naruto-OP5.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP6" href="https://v.animethemes.moe/Naruto-OP6.webm" target="_blank">https://v.animethemes.moe/Naruto-OP6.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP7" href="https://v.animethemes.moe/Naruto-OP7.webm" target="_blank">https://v.animethemes.moe/Naruto-OP7.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP8" href="https://v.animethemes.moe/Naruto-OP8.webm" target="_blank">https://v.animethemes.moe/Naruto-OP8.webm</a>
+        <a class="full-link full-link-op" file_name="Naruto-OP9" href="https://v.animethemes.moe/Naruto-OP9.webm" target="_blank">https://v.animethemes.moe/Naruto-OP9.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED1" href="https://v.animethemes.moe/Naruto-ED1.webm" target="_blank">https://v.animethemes.moe/Naruto-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED2" href="https://v.animethemes.moe/Naruto-ED2.webm" target="_blank">https://v.animethemes.moe/Naruto-ED2.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED3" href="https://v.animethemes.moe/Naruto-ED3.webm" target="_blank">https://v.animethemes.moe/Naruto-ED3.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED4" href="https://v.animethemes.moe/Naruto-ED4.webm" target="_blank">https://v.animethemes.moe/Naruto-ED4.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED5" href="https://v.animethemes.moe/Naruto-ED5.webm" target="_blank">https://v.animethemes.moe/Naruto-ED5.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED6" href="https://v.animethemes.moe/Naruto-ED6.webm" target="_blank">https://v.animethemes.moe/Naruto-ED6.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED7" href="https://v.animethemes.moe/Naruto-ED7.webm" target="_blank">https://v.animethemes.moe/Naruto-ED7.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED8" href="https://v.animethemes.moe/Naruto-ED8.webm" target="_blank">https://v.animethemes.moe/Naruto-ED8.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED9" href="https://v.animethemes.moe/Naruto-ED9.webm" target="_blank">https://v.animethemes.moe/Naruto-ED9.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED10" href="https://v.animethemes.moe/Naruto-ED10.webm" target="_blank">https://v.animethemes.moe/Naruto-ED10.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED11" href="https://v.animethemes.moe/Naruto-ED11.webm" target="_blank">https://v.animethemes.moe/Naruto-ED11.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED12" href="https://v.animethemes.moe/Naruto-ED12.webm" target="_blank">https://v.animethemes.moe/Naruto-ED12.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED13" href="https://v.animethemes.moe/Naruto-ED13.webm" target="_blank">https://v.animethemes.moe/Naruto-ED13.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED14" href="https://v.animethemes.moe/Naruto-ED14.webm" target="_blank">https://v.animethemes.moe/Naruto-ED14.webm</a>
+        <a class="full-link full-link-ed" file_name="Naruto-ED15" href="https://v.animethemes.moe/Naruto-ED15.webm" target="_blank">https://v.animethemes.moe/Naruto-ED15.webm</a>
+        <a class="full-link full-link-ed" file_name="NarutoShounenHen-ED7" href="https://v.animethemes.moe/NarutoShounenHen-ED7.webm" target="_blank">https://v.animethemes.moe/NarutoShounenHen-ED7.webm</a>
+      </li>
+      <li>Neko no Ongaeshi</li>
+      <li>One Punch Man
+        <a class="full-link full-link-op" file_name="OnePunchMan-OP1" href="https://v.animethemes.moe/OnePunchMan-OP1.webm" target="_blank">https://v.animethemes.moe/OnePunchMan-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="OnePunchMan-ED1" href="https://v.animethemes.moe/OnePunchMan-ED1.webm" target="_blank">https://v.animethemes.moe/OnePunchMan-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="OnePunchMan-ED2" href="https://v.animethemes.moe/OnePunchMan-ED2.webm" target="_blank">https://v.animethemes.moe/OnePunchMan-ED2.webm</a>
+      </li>
+      <li>Ookami Kodomo no Ame to Yuki
+        <a class="full-link full-link-ed" file_name="OokamiKodomo-ED1" href="https://v.animethemes.moe/OokamiKodomo-ED1.webm" target="_blank">https://v.animethemes.moe/OokamiKodomo-ED1.webm</a>
+      </li>
+      <li>Perfect Blue
+        <a class="full-link full-link-ed" file_name="PerfectBlue-ED1" href="https://v.animethemes.moe/PerfectBlue-ED1.webm" target="_blank">https://v.animethemes.moe/PerfectBlue-ED1.webm</a>
+      </li>
+      <li>Poputepipikku
+        <a class="full-link full-link-op" file_name="PopTeamEpic-OP1" href="https://v.animethemes.moe/PopTeamEpic-OP1-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-OP1-NCBD1080.webm</a>
+        <a class="full-link full-link-op" file_name="PopTeamEpic-OP2" href="https://v.animethemes.moe/PopTeamEpic-OP2-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-OP2-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED1" href="https://v.animethemes.moe/PopTeamEpic-ED1-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED1-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED2" href="https://v.animethemes.moe/PopTeamEpic-ED2-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED2-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED3" href="https://v.animethemes.moe/PopTeamEpic-ED3-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED3-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED4" href="https://v.animethemes.moe/PopTeamEpic-ED4-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED4-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED5" href="https://v.animethemes.moe/PopTeamEpic-ED5-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED5-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED6" href="https://v.animethemes.moe/PopTeamEpic-ED6-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED6-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED7" href="https://v.animethemes.moe/PopTeamEpic-ED7-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED7-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED8" href="https://v.animethemes.moe/PopTeamEpic-ED8-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED8-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED9" href="https://v.animethemes.moe/PopTeamEpic-ED9-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED9-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="PopTeamEpic-ED10" href="https://v.animethemes.moe/PopTeamEpic-ED10-NCBD1080.webm" target="_blank">https://v.animethemes.moe/PopTeamEpic-ED10-NCBD1080.webm</a>
+      </li>
+      <li>Saint☆Oniisan (Movie)</li>
+      <li>Sen to Chihiro no Kamikakushi
+        <a class="full-link full-link-ed" file_name="SenToChihiroNoKamikakushi-ED1" href="https://v.animethemes.moe/SenToChihiroNoKamikakushi-ED1.webm" target="_blank">https://v.animethemes.moe/SenToChihiroNoKamikakushi-ED1.webm</a>
+      </li>
+      <li>Neon Genesis Evangelion
+        <a class="full-link full-link-op" file_name="NeonGenesisEvangelion-OP1" href="https://v.animethemes.moe/NeonGenesisEvangelion-OP1.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED1" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED1.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED2" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED2.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED2.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED3" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED3.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED3.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED4" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED4.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED4.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED5" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED5.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED5.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED6" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED6.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED6.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED7" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED7.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED7.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED8" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED8.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED8.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED9" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED9.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED9.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED10" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED10.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED10.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED11" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED11.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED11.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED12" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED12.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED12.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED13" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED13.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED13.webm</a>
+        <a class="full-link full-link-ed" file_name="NeonGenesisEvangelion-ED14" href="https://v.animethemes.moe/NeonGenesisEvangelion-ED14.webm" target="_blank">https://v.animethemes.moe/NeonGenesisEvangelion-ED14.webm</a>
+      </li>
+      <li>Neon Genesis Evangelion: The End of Evangelion
+        <a class="full-link full-link-ed" file_name="EvangelionEndOfEvangelion-ED1" href="https://v.animethemes.moe/EvangelionEndOfEvangelion-ED1.webm" target="_blank">https://v.animethemes.moe/EvangelionEndOfEvangelion-ED1.webm</a>
+      </li>
+      <li>Suzume no Tojimari
+        <a class="full-link full-link-ed" file_name="SuzumeNoTojimari-ED1" href="https://v.animethemes.moe/SuzumeNoTojimari-ED1.webm" target="_blank">https://v.animethemes.moe/SuzumeNoTojimari-ED1.webm</a>
+        <a class="full-link full-link-ed" file_name="SuzumeNoTojimari-ED2" href="https://v.animethemes.moe/SuzumeNoTojimari-ED2.webm" target="_blank">https://v.animethemes.moe/SuzumeNoTojimari-ED2.webm</a>
+      </li>
+      <li>Tanoshii Muumin Ikka</li>
+      <li>Tejina-senpai
+        <a class="full-link full-link-op" file_name="TejinaSenpai-OP1" href="https://v.animethemes.moe/TejinaSenpai-OP1.webm" target="_blank">https://v.animethemes.moe/TejinaSenpai-OP1.webm</a>
+        <a class="full-link full-link-ed" file_name="TejinaSenpai-ED1" href="https://v.animethemes.moe/TejinaSenpai-ED1.webm" target="_blank">https://v.animethemes.moe/TejinaSenpai-ED1.webm</a>
+      </li>
+      <li>Tenkuu no Shiro Laputa
+        <a class="full-link full-link-op" file_name="TenkuuNoShiroLaputa-OP1" href="https://v.animethemes.moe/TenkuuNoShiroLaputa-OP1.webm" target="_blank">https://v.animethemes.moe/TenkuuNoShiroLaputa-OP1.webm</a>
+      </li>
+      <li>Tonari no Totoro</li>
+      <li>Uzaki-chan wa Asobitai!
+        <a class="full-link full-link-op" file_name="UzakiChanWaAsobitai-OP1" href="https://v.animethemes.moe/UzakiChanWaAsobitai-OP1-NCBD1080.webm" target="_blank">https://v.animethemes.moe/UzakiChanWaAsobitai-OP1-NCBD1080.webm</a>
+        <a class="full-link full-link-ed" file_name="UzakiChanWaAsobitai-ED1" href="https://v.animethemes.moe/UzakiChanWaAsobitai-ED1-NCBD1080.webm" target="_blank">https://v.animethemes.moe/UzakiChanWaAsobitai-ED1-NCBD1080.webm</a>
+      </li>
+    </ul>
+  </body>
+</html>
