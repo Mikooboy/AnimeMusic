@@ -223,6 +223,16 @@ body {
     text-decoration: inherit;
 }
 
+.users {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1vh;
+    overflow-y: auto;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
+
 .ops, .eds {
     box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 2px inset, rgba(0, 0, 0, 0.2) -1px -1px 2px inset;
     border-radius: 4px;
@@ -300,6 +310,7 @@ body {
     color: #eee;
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
     transition: 0.075s;
+    text-decoration: none;
 }
 
 .buttons:hover {
