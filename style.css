@@ -221,6 +221,9 @@ body {
     text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
     color: inherit;
     text-decoration: inherit;
+    font-family: consolas;
+    color: #eee;
+    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
 }
 
 .users {
@@ -231,6 +234,15 @@ body {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+.home {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    flex-direction: column;
+    height: 20%;
+    margin: auto;
 }
 
 .ops, .eds {
