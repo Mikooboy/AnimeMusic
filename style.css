@@ -239,12 +239,11 @@ body {
 
 .title {
     font-size: 2.5vh;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
     color: inherit;
     text-decoration: inherit;
     font-family: consolas;
     color: #eee;
-    text-shadow: rgba(0, 0, 0, 0.8) 1px 1px 1px;
+    text-shadow: rgba(0, 0, 0, 0.8) 3px 3px 3px;
 }
 
 .users {
